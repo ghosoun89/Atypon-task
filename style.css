@@ -1,0 +1,225 @@
+/*=============================*/
+/*----------------basic setup-------*/
+/*===============================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+html {
+    background-color: #fff;
+    font-size: 14px;
+    /*this make our font render in correct way*/
+    text-rendering: optimizeLegibility;
+    margin-top: 1%;
+    margin-left: 1%;
+    border-left: 1px solid rgb(80, 90, 230);
+} 
+
+/*=============================*/
+/*--------------reusable component-------*/
+/*===============================*/
+.row {
+    max-width: 1140px;
+    /* to put them in the center*/
+    margin: 0 auto ;
+}
+
+
+h2,
+h3 {
+  
+    font-size: 80%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ /*=============================*/
+/* style for logo */
+
+nav h2 {
+    background-color: rgb(58, 58, 58);
+    padding-right: 30px;
+    margin-top: 1%;
+    margin-left: 20px;
+    width: 120px;
+    color: rgb(253, 253, 253);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-size: 20px;
+    margin-bottom: 1%x;
+    text-align: center;
+  }
+
+  /*=========================*/
+  /* style for links*/
+
+  .main-nav li {
+    /* put them in one line by line block, and add spce btween them by margin*/
+    display: inline-block;
+   
+    padding-top: 1%;
+    font-weight: bold;
+}
+
+/*=============================*/
+/*style for border*/
+
+.head-border {
+     border-top: 1px solid rgb(80, 90, 230);
+     border-right: 1px solid rgb(80, 90, 230); 
+     border-bottom: 1px solid rgb(21, 21, 24); 
+     padding-bottom: 1%;
+}
+
+/*======================================*/
+/* style for whole section */
+.long-copy {
+    line-height: 145%;
+    /* to put the paragraphin the midle i use width and margin */
+    width: 50%;
+    margin-left: 20%;
+    padding-right: 5%;
+    padding-top: 1%;
+    float: left;
+}
+
+
+article h3, p {
+    padding-top: 3%;
+}
+
+/*===========================================*/
+/* style for sidebare */
+
+aside {
+    width: 30%;
+    float: left;
+    padding-right: 5%;
+}
+
+aside nav {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(241, 241, 241);
+    justify-content: center;
+    display: flex;
+    }
+
+     
+ /* style for thr buttons web */
+  aside  button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    transition: 0.3s;
+    width: 30%;
+  
+  }
+
+  .scrollable {
+  
+    height: 500px;
+    overflow-y: auto;
+}
+
+
+/*-------------css3 for mobile----------*/
+
+@media only screen and (max-width: 480px) {
+    .show-mobile {
+      display: block;
+    }
+    .hide-mobile {
+      display: none;
+    }
+  }
+
+@media only screen and (min-width: 481px) {
+    .show-mobile {
+      display: none;
+    }
+    .hide-mobile {
+      display: block;
+    }
+  }
+
+  
+ /*=============================*/
+/* style for logo Mobile */
+
+  #logoM {
+    background-color: rgb(58, 58, 58);
+    padding-right: 30px;
+    margin-top: 6%;
+    margin-left: 20px;
+    width: 120px;
+    color: rgb(253, 253, 253);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /*=========================*/
+  /* header style */
+  #navMob{
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+
+  /*=========================*/
+/* back button for mob  */
+  .back {
+    background-color: rgb(58, 58, 58);
+    padding-right: 160px;
+    width: 300px;
+    color: black;
+    padding-top: 9%;
+    padding-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    background-color: white;
+    display: block;
+    border: none;
+  }
+  
+  /*=========================*/
+  /* style for mob button */
+  .buttonM > button {
+   
+    width: 100px;
+    line-height: 50px;
+    padding-top: 20px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    display: inline-block;
+  }
+
+  
+  /*=========================*/
+/* make the buttons in mob up at right  */
+  .mainFlex {
+
+    display: flex;
+    margin-top: 120px;
+
+  }
+
+  
+
+  
+
+
